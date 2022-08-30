@@ -47,3 +47,40 @@ button,
 select {
   margin-top: 1rem;
 }
+
+button {
+  padding: 1rem;
+  background-color: rgb(12, 12, 164);
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input,
+button,
+select {
+  border-radius: 5px;
+}
+
+.grow {
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
