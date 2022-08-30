@@ -59,10 +59,11 @@ function generateOutput() {
     let fileNamePng = inputValue.endsWith(".png");
 
     if (fileNameJpg) {
-      outputBox.value = `The filename is ${fileNameJpg}`;
-    }
-    if (fileNamePng) {
-      outputBox.value = `The filename is ${fileNamePng}`;
+      outputBox.value = `The filename is a .jpg`;
+    } else if (fileNamePng) {
+      outputBox.value = `The filename is a .png`;
+    } else if (fileNameJpg == false && fileNamePng == false) {
+      outputBox.value = `This is not a file`;
     }
 
     console.log(choice.value);
