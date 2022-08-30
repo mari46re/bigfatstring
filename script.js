@@ -69,6 +69,11 @@ function generateOutput() {
   } else if (choice.value == "6") {
     //If input is a password: Hide a password with the correct number of *s
 
+    let passw = "";
+    passw = passw.padEnd(inputValue.length, "*");
+
+    outputBox.value = passw;
+
     console.log(choice.value);
   } else if (choice.value == "7") {
     //With any input: Make the third character uppercase
